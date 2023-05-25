@@ -24,6 +24,8 @@ namespace CarLotSimulator
             HonkNoise = honkNoise;
             IsDriveable = isDriveable;
 
+            CarLot._numberOfCars++;
+
         }
 
         public int Year { get; set; }
