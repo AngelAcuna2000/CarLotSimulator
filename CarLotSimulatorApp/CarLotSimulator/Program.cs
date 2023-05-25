@@ -32,9 +32,9 @@ namespace CarLotSimulator
 
                 Model = "Phantom",
 
-                EngineNoise = "Engine Noise: Purr \n",
+                EngineNoise = "Engine Noise: Purr",
 
-                HonkNoise = "Honk Noise: Boom \n \n",
+                HonkNoise = "Honk Noise: Boom",
 
                 IsDriveable = true
 
@@ -55,9 +55,9 @@ namespace CarLotSimulator
 
             car2.Model = "Maybach S-Class";
 
-            car2.EngineNoise = "Engine Noise: Hum \n";
+            car2.EngineNoise = "Engine Noise: Hum";
 
-            car2.HonkNoise = "Honk Noise: Blare \n \n";
+            car2.HonkNoise = "Honk Noise: Blare";
 
             car2.IsDriveable = true;
 
@@ -68,7 +68,7 @@ namespace CarLotSimulator
 
             //Custom Constructor
 
-            var car3 = new Car(2023, "Bentley", "Flying Spur", "Engine Noise: Growl \n", "Honk Noise: Bellow \n \n", true);
+            var car3 = new Car(2023, "Bentley", "Flying Spur", "Engine Noise: Growl", "Honk Noise: Bellow", true);
 
 
             carLot.ParkingLot.Add(car3);

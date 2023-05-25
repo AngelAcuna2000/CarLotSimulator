@@ -8,15 +8,18 @@ namespace CarLotSimulator
 {
     public class CarLot
     {
+        public static int _numberOfCars = 1;
+
         public List<Car> ParkingLot { get; set; } = new List<Car>();
 
         public void CheckCars()
         {
             foreach (var car in ParkingLot)
             {
-                Console.WriteLine($"{car.Year} {car.Make} {car.Model} \n");
+                car.CarType();
                 car.MakeEngineNoise(car.EngineNoise);
                 car.MakeHonkNoise(car.HonkNoise);
+                Car.CurrentNumberOfCars();
             }
         }
     }
